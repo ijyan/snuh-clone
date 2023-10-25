@@ -2,7 +2,7 @@
  * PROCEDURE
  * **************************************** */
 #content {}
-#content .inner {width: 1100px; margin: 80px auto 120px; padding-right: 300px;}
+#content .inner {width: 1100px; margin: 80px auto 120px; padding-right: 300px; position: relative;}
 #content .inner .content-header {display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 44px;}
 #content .inner .content-header h2 {font-size: 40px; font-weight: 700; letter-spacing: -2px;}
 #content .inner .content-header .content-util {display: flex; gap: 24px; align-items: center;}
@@ -28,7 +28,7 @@
 /* right-list */
 .procedure .right-list {display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;}
 .procedure .right-list li {}
-.procedure .right-list li .title {font-size: 20px; margin: 0 0 10px;}
+.procedure .right-list li .title {font-size: 20px; margin: 0 0 10px; font-weight: 500;}
 .procedure .right-list li .title span {display: inline-block; padding-right: 6px; font-weight: 700;}
 .procedure .right-list li:nth-child(odd) span {color: #2763ba;}
 .procedure .right-list li:nth-child(even) span {color: #2ca48f;}
