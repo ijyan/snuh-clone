@@ -66,8 +66,10 @@
     </div>
   </section>
   <!-- //topbar -->
+  <!-- login -->
   <main id="content" class="login">
     <div class="inner">
+      <!-- login member -->
       <div class="area member">
         <div class="title">
           <h3>로그인</h3>
@@ -75,13 +77,16 @@
             <br>
             로그인 후 이용하실 수 있습니다.</p>
         </div>
+        <!-- form -->
         <form action="">
           <input id="id" name="id" type="text" placeholder="아이디/진찰권 번호(환자번호)">
           <input id="password" name="password" type="password" placeholder="비밀번호">
-          <button class="btn-login member">로그인</button>
+          <button class="btn-login member"><a href="#">로그인</a></button>
         </form>
+        <!-- //form -->
         <ul class="login-list">
           <li><a href="#">아이디/비밀번호 찾기</a></li>
+          <li class="line"></li>
           <li><a href="#">회원가입</a></li>
         </ul>
         <button class="btn-naver"><a href="#">네이버 아이디로 로그인</a></button>
@@ -90,41 +95,51 @@
           <div class="num">1588-5700</div>
         </div>
       </div>
+      <!-- //login member -->
+      <!-- login non-member -->
       <div class="area non-member">
         <div class="title">
           <h3>비회원 로그인</h3>
         </div>
+        <!-- form -->
         <form action="">
-          <div class="row">
+          <div class="row id">
             <input id="nmid" name="nmid" type="text" placeholder="이름">
             <input id="nmnum" name="nmnum" type="text" placeholder="진찰권 번호">
           </div>
-          <div class="row">
+          <div class="row phone">
             <input id="phone" name="phone" type="text" placeholder="휴대전화번호(010-0000-0000)">
             <button class="btn-comfirm">승인</button>
           </div>
           <div class="row">
             <input id="confirm" name="confirm" type="text" placeholder="승인번호">
           </div>
+          <!-- privacy -->
           <div class="privacy">
             <div class="inner">
               <h3>※ 개인정보 수집 및 이용에 대한 안내</h3>
-              <p>1. 수집/이용 목적: 비회원 환자의 진료예약 신청, 확인 및 취소에 대한 이용 기록 보관.</p>
-              <p>2. 수집하는 항목: 이름, 환자등록번호(진찰권 번호), 휴대전화번호</p>
-              <p>3. 개인정보의 보유 및 이용기간 : 2년</p>
-              <p>4. 동의를 거부할 권리가 있으며, 대표전화(전화: 1588-5700)로 이용하실 수 있습니다.</p>
+              <p>1. 수집/이용 목적: 비회원 환자의 진료예약 신청, 확인 및 취소에 대한 이용 기록 보관.<br>
+              2. 수집하는 항목: 이름, 환자등록번호(진찰권 번호), 휴대전화번호<br>
+              3. 개인정보의 보유 및 이용기간 : 2년<br>
+              4. 동의를 거부할 권리가 있으며, 대표전화(전화: 1588-5700)로 이용하실 수 있습니다.</p>
             </div>
           </div>
-          <div class="user-check">
-            <input type="checkbox" id="user-check">
-            <label for="user-check">환자 및 법적대리인만 서비스 이용이 가능하며 개인정보 이용에 동의합니다.</label>
+          <!-- //privacy -->
+          <!-- user-check -->
+          <div class="agreement">
+            <input type="checkbox" id="agreement">
+            <label for="agreement"><span>환자 및 법적대리인만 서비스 이용이 가능하며 개인정보 이용에 동의합니다.</span></label>
           </div>
-          <button class="btn-login non-member">비회원 로그인</button>
+          <!-- //user-check -->
+          <button class="btn-login non-member"><a href="#">비회원 로그인</a></button>
         </form>
-        <span>진찰권 번호(환자번호)를 잊으셨나요?</span>
+        <!-- //form -->
+        <a href="#" class="non-find">진찰권 번호(환자번호)를 잊으셨나요?</a>
       </div>
+      <!-- //login non-member -->
     </div>
   </main>
+  <!-- //login -->
 </div>
 </body>
 </html>

@@ -1,12 +1,17 @@
 @charset "utf-8";
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&display=swap');
 
-/** reset.css **/
+/* **************************************** *
+ * RESET
+ * **************************************** */
+::selection {
+    background: #ddd;
+}
+
 html, body {
     color: #000;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1;
     margin: 0;
     padding: 0;
     letter-spacing: 0;
@@ -29,7 +34,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input, button, textarea { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; }
+time, mark, audio, video, input, button, textarea { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; }
 
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
@@ -40,13 +45,9 @@ img, fieldset { border: 0 none; }
 ol, ul, li { list-style: none outside none; }
 
 a { color: initial; text-decoration: none; }
-
 a:link { color: initial; text-decoration: none; }
-
 a:visited { color: initial; text-decoration: none; }
-
 a:active { color: initial; text-decoration: none; }
-
 a:hover { color: initial; text-decoration: none; }
 
 input, select, img { vertical-align: middle; }
@@ -60,3 +61,15 @@ button { cursor: pointer; background-color: transparent; }
 em { font-style: normal; }
 
 .clear:after {content: ''; display: block; clear: both;}
+
+/* **************************************** *
+ * INPUT
+ * **************************************** */
+input[type=tel], input[type=text], input[type=email], input[type=number], input[type=password] {border: 1px solid #ccc; padding: 0 10px;  font-size: 16px;}
+input::placeholder {color: #aaa;}
+
+input[type="checkbox"]{display: none;}
+input[type="checkbox"] + label{cursor: pointer; position: relative;}
+input[type="checkbox"] + label:before {content: ''; display: block; width: 18px; height: 18px; position: absolute; left: 0; top: 4px; background-color: #fff; border: 1px solid #000;}
+input[type="checkbox"]:checked + label:before {content: ''; background-image: url('/img/ico-check.svg');}
+input[type="checkbox"] + label > span {display: block; padding: 0 0 0 32px;}
