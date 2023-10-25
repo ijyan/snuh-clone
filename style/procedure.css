@@ -1,0 +1,35 @@
+/* **************************************** *
+ * PROCEDURE
+ * **************************************** */
+#content {}
+#content .inner {width: 1100px; margin: 80px auto 120px; padding-right: 300px;}
+#content .inner .content-header {display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 44px;}
+#content .inner .content-header h2 {font-size: 40px; font-weight: 700; letter-spacing: -2px;}
+#content .inner .content-header .content-util {display: flex; gap: 24px; align-items: center;}
+#content .inner .content-header .content-util a {color: #888; display: block; font-size: 14px; position: relative;}
+#content .inner .content-header .content-util a:not(:first-child):before {content: ''; display: block; width: 1px; height: 8px; background-color: #ccc; position: absolute; top: 7px; left: -12px;}
+#content .inner .content-header .content-util .zoom {font-size: 0;}
+#content .inner .content-header .content-util button {width: 30px; height: 30px; border: 1px solid #ccc; position: relative;}
+#content .inner .content-header .content-util button:before {content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#content .inner .content-header .content-util button.btn-zoomout:before {content:''; display:block
+;width: 10px; height: 2px; background-color: #cccccc; position: absolute; background-image: url('/img/ico-zoomout.svg');}
+#content .inner .content-header .content-util button.btn-zoomin {margin-left: -1px;}
+#content .inner .content-header .content-util button.btn-zoomin:before {width: 10px; height: 10px; background-image: url('/img/ico-zoomin.svg');}
+
+/* desc */
+.procedure .desc {width: 100%; padding: 40px; background: url('/img/procedure-bg.jpg') center;}
+.procedure .desc h3 {font-size: 28px; margin-bottom: 16px;}
+.procedure .desc p {line-height: 1.6;}
+.procedure .desc p span.color {color: #2763ba;}
+
+/* img */
+.procedure .right-img {width: 100%; height: 185px; background: url('/img/procedure-img.png'); margin: 40px 0;}
+
+/* right-list */
+.procedure .right-list {display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;}
+.procedure .right-list li {}
+.procedure .right-list li .title {font-size: 20px; margin: 0 0 10px;}
+.procedure .right-list li .title span {display: inline-block; padding-right: 6px; font-weight: 700;}
+.procedure .right-list li:nth-child(odd) span {color: #2763ba;}
+.procedure .right-list li:nth-child(even) span {color: #2ca48f;}
+.procedure .right-list li p {line-height: 1.5; color: #333;}
