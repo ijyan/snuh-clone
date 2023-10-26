@@ -16,7 +16,7 @@
 
 /* member */
 .login .inner .area.member {border-top: 2px solid #2763ba;}
-.login .inner .area.member h3:before {background-image: url('/img/ico-member.svg');}
+.login .inner .area.member h3:before {background-image: url('../img/ico-member.svg');}
 .login .inner .area.member .btn-login {background-color: #2263bb;}
 .login .inner .area.member .btn-login a {color: #fff;}
 .login .inner .area.member .login-list {display: flex; justify-content: center; margin: 20px 0; gap: 12px; align-items: center;}
@@ -24,14 +24,14 @@
 .login .inner .area.member .login-list li a {display: block; color: #666;}
 .login .inner .area.member .btn-naver {width: 100%; border: 1px solid #00c63b; margin: 12px 0 32px;}
 .login .inner .area.member .btn-naver a {color: #666; font-weight: 700; font-size: 18px; display: block; height: 62px; line-height: 60px; position: relative;}
-.login .inner .area.member .btn-naver a:before {content: ''; display: inline-block; width: 20px; height: 19px; vertical-align: middle; background-image: url('/img/ico-naver.svg'); margin: 0 6px 4px 0;}
+.login .inner .area.member .btn-naver a:before {content: ''; display: inline-block; width: 20px; height: 19px; vertical-align: middle; background-image: url('../img/ico-naver.svg'); margin: 0 6px 4px 0;}
 .login .inner .area.member .tel {border: 1px solid #ccc; display: flex; align-items: center;}
 .login .inner .area.member .tel div {width: 50%; text-align: center;  height: 80px; line-height: 80px;}
 .login .inner .area.member .tel div.num {font-size: 20px; color: #2763ba; font-weight: 700; border-left: 1px solid #ccc;}
 
 /* non-member */
 .login .inner .area.non-member {border-top: 2px solid #afafaf;}
-.login .inner .area.non-member h3:before {background-image: url('/img/ico-nonmember.svg');}
+.login .inner .area.non-member h3:before {background-image: url('../img/ico-nonmember.svg');}
 .login .inner .area.non-member form .row {display: flex;}
 .login .inner .area.non-member form .row.id {gap: 10px;}
 .login .inner .area.non-member form .row .btn-comfirm {padding: 0 20px; font-size: 16px; height: 50px; margin-left: -1px; background-color: #2263bb; color: #fff;}

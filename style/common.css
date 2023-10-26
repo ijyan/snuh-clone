@@ -7,20 +7,20 @@
 #header .top-menu {border: 1px solid #ebebeb;}
 #header .top-menu .inner {position: relative; width: 1100px; margin: 0 auto; height: 60px; display: flex; align-items: center; justify-content: flex-end;}
 #header .top-menu .inner .logo {}
-#header .top-menu .inner .logo a {display: block; width: 239px; height: 25px; background-image: url('/img/logo.png'); position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; background-repeat: no-repeat;}
+#header .top-menu .inner .logo a {display: block; width: 239px; height: 25px; background-image: url('../img/logo.png'); position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; background-repeat: no-repeat;}
 #header .top-menu .inner .util {display: flex; gap: 13px;}
 #header .top-menu .inner .util li {}
 #header .top-menu .inner .util li a {}
 #header .top-menu .inner .util li a.remote {font-size: 14px;}
 #header .top-menu .inner .util li a.lang {position: relative; padding: 0 24px 0 0; }
-#header .top-menu .inner .util li a.lang:after {content: ''; display: block; width: 16px; height: 16px; background-image: url('/img/ico-lang.svg'); position: absolute; right: 0; top: 6px;}
+#header .top-menu .inner .util li a.lang:after {content: ''; display: block; width: 16px; height: 16px; background-image: url('../img/ico-lang.svg'); position: absolute; right: 0; top: 6px;}
 /* nav */
 #nav {width: 1100px; margin: 0 auto; position: relative;}
-#nav .btn-menu {width: 30px; height: 30px; background-image: url('/img/ico-menu.svg'); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+#nav .btn-menu {width: 30px; height: 30px; background-image: url('../img/ico-menu.svg'); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 #nav .gnb {height: 80px; display: flex; gap: 50px; font-size: 20px; font-weight: 600; justify-content: center; align-items: center;}
 #nav .gnb li {}
 #nav .gnb li a {padding: 10px;}
-#nav .btn-search {position: absolute; width: 30px; height: 30px; background-image: url('/img/ico-search.svg'); right: 0; top: 50%; transform: translateY(-50%);}
+#nav .btn-search {position: absolute; width: 30px; height: 30px; background-image: url('../img/ico-search.svg'); right: 0; top: 50%; transform: translateY(-50%);}
 #nav .btn-search {}
 
 /* **************************************** *
@@ -32,7 +32,7 @@
 .top-bar .inner .breadcrumb {display: flex; height: 100%;}
 .top-bar .inner .breadcrumb .btn-home {border-left: 1px solid #5d8acb; border-right: 1px solid #5d8acb; height: 100%;}
 .top-bar .inner .breadcrumb .btn-home a {width: 48px; display: block; position: relative;}
-.top-bar .inner .breadcrumb .btn-home a:before {content: ''; display: block; width: 20px; height: 20px; background-image: url('/img/ico-home.svg'); background-repeat: no-repeat; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)}
+.top-bar .inner .breadcrumb .btn-home a:before {content: ''; display: block; width: 20px; height: 20px; background-image: url('../img/ico-home.svg'); background-repeat: no-repeat; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)}
 .top-bar .inner .breadcrumb .breadcrumb-list {display: flex;}
 .top-bar .inner .breadcrumb .breadcrumb-list li {width: 188px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-right: 1px solid #5d8acb;}
 .top-bar .inner .breadcrumb .breadcrumb-list li > a {display: block; height: 50px; line-height: 50px; color: #fff;}
@@ -57,7 +57,7 @@
 #aside .aside-service li {}
 #aside .aside-service li a {font-size: 16px; color: #2763ba;}
 #aside .phone {border: 1px solid #ccc; padding: 12px 12px 12px 72px; position: relative;}
-#aside .phone:before {content: ''; display: block; width: 40px; height: 40px; background-image: url('/img/ico-stethoscope.svg'); position: absolute; left: 12px; top: 50%; transform: translateY(-50%);}
+#aside .phone:before {content: ''; display: block; width: 40px; height: 40px; background-image: url('../img/ico-stethoscope.svg'); position: absolute; left: 12px; top: 50%; transform: translateY(-50%);}
 #aside .phone div {color: #2763ba; font-size: 20px; font-weight: 700;}
 #aside .btn-top {margin-top: 32px; display: block;}
 

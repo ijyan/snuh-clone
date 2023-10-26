@@ -12,18 +12,18 @@
 #content .inner .content-header .content-util button {width: 30px; height: 30px; border: 1px solid #ccc; position: relative;}
 #content .inner .content-header .content-util button:before {content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #content .inner .content-header .content-util button.btn-zoomout:before {content:''; display:block
-;width: 10px; height: 2px; background-color: #cccccc; position: absolute; background-image: url('/img/ico-zoomout.svg');}
+;width: 10px; height: 2px; background-color: #cccccc; position: absolute; background-image: url('../img/ico-zoomout.svg');}
 #content .inner .content-header .content-util button.btn-zoomin {margin-left: -1px;}
-#content .inner .content-header .content-util button.btn-zoomin:before {width: 10px; height: 10px; background-image: url('/img/ico-zoomin.svg');}
+#content .inner .content-header .content-util button.btn-zoomin:before {width: 10px; height: 10px; background-image: url('../img/ico-zoomin.svg');}
 
 /* desc */
-.procedure .desc {width: 100%; padding: 40px; background: url('/img/procedure-bg.jpg') center;}
+.procedure .desc {width: 100%; padding: 40px; background: url('../img/procedure-bg.jpg') center;}
 .procedure .desc h3 {font-size: 28px; margin-bottom: 16px;}
 .procedure .desc p {line-height: 1.6;}
 .procedure .desc p span.color {color: #2763ba;}
 
 /* img */
-.procedure .right-img {width: 100%; height: 185px; background: url('/img/procedure-img.png'); margin: 40px 0;}
+.procedure .right-img {width: 100%; height: 185px; background: url('../img/procedure-img.png'); margin: 40px 0;}
 
 /* right-list */
 .procedure .right-list {display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;}
