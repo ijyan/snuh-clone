@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="kr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>입원절차</title>
-  <link rel="stylesheet" href="style/reset.css">
-  <link rel="stylesheet" href="style/common.css">
-  <link rel="stylesheet" href="style/procedure.css">
+  <title>로그인 | 서울대학교병원 클론</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/login.css">
 </head>
 <body>
 <div class="wrap">
@@ -53,10 +53,11 @@
     <div class="inner">
       <div class="breadcrumb">
         <button class="btn-home"><a href="#"></a></button>
-        <ul class="breadcrumb-list">
-          <li><a href="#">고객참여</a><span class="ico-expand"></span></li>
-          <li><a href="#">환자권리장전</a><span class="ico-expand"></span></li>
-        </ul>
+        <!--        <ul class="breadcrumb-list">-->
+        <!--          <li><a href="#">진료안내</a><span class="ico-expand"></span></li>-->
+        <!--          <li><a href="#">외래진료안내</a><span class="ico-expand"></span></li>-->
+        <!--          <li><a href="#">심층진찰안내</a><span class="ico-expand"></span></li>-->
+        <!--        </ul>-->
       </div>
       <ul class="link">
         <li><a href="#">진료예약</a></li>
@@ -66,85 +67,77 @@
   </section>
   <!-- //topbar -->
   <!-- content -->
-  <main id="content" class="procedure">
-    <!-- inner -->
+  <main id="content" class="login">
     <div class="inner">
-      <!-- content-header -->
-      <div class="content-header">
-        <h2>환자권리장전</h2>
-        <div class="content-util">
-          <a href="#">인쇄</a>
-          <a href="#">관심콘텐츠</a>
-          <a href="#">URL복사</a>
-          <div class="zoom">
-            <button class="btn-zoomout"></button>
-            <button class="btn-zoomin"></button>
-          </div>
+      <!-- login member -->
+      <div class="area member">
+        <div class="title">
+          <h3>로그인</h3>
+          <p>서울대학교병원 홈페이지 회원 서비스는
+            <br>
+            로그인 후 이용하실 수 있습니다.</p>
         </div>
-      </div>
-      <!-- //content-header -->
-      <!-- desc -->
-      <div class="desc">
-        <h3>서울대학교병원은</h3>
-        <p>
-          <span class="color">환자중심, 인간존중, 지식창조, 사회봉사</span> 라는
-          <br>
-          경영이념을 통해 신체적/정신적 어려움으로
-          <br>
-          병원을 찾는 <span class="color">모든 환자의 권리를 존중</span>하고,
-          <br>
-          <span class="color">최선의 진료를 제공</span>하기 위하여 다음과 같이 선언한다.
-        </p>
-      </div>
-      <!-- //desc -->
-      <!-- img -->
-      <div class="right-img"></div>
-      <!-- //img -->
-      <!-- right-list -->
-      <ul class="right-list">
-        <li>
-          <div class="title"><span>01</span> 존엄의 권리</div>
-          <p>환자는 존엄한 인간으로서 예우받을 권리가 있다.</p>
-        </li>
-        <li>
-          <div class="title"><span>02</span> 평등의 권리</div>
-          <p>환자는 성별, 연령, 종교 또는 사회적 신분을 떠나 평등한 진료를 받을 권리가 있다.</p>
-        </li>
-        <li>
-          <div class="title"><span>03</span> 설명을 들을 권리</div>
-          <p>환자는 의료진으로부터 질병의 진단, 치료계획, 결과, 예후에 대한 설명을 들을 권리가 있다.</p>
-        </li>
-        <li>
-          <div class="title"><span>04</span> 개인신상 비밀을 보호받을 권리</div>
-          <p>환자는 진료내용, 신체의 비밀 및 개인생활의 비밀을 보호받을 권리가 있다.</p>
-        </li>
-      </ul>
-      <!-- //right-list -->
-      <!-- aside -->
-      <aside id="aside">
-        <h3>관련 콘텐츠</h3>
-        <ul class="aside-content">
-          <li><a href="#">응급의료센터</a></li>
-          <li><a href="#">본원</a></li>
-          <li><a href="#">어린이병원</a></li>
-          <li><a href="#">암병원</a></li>
+        <!-- form -->
+        <form action="">
+          <input id="id" name="id" type="text" placeholder="아이디/진찰권 번호(환자번호)">
+          <input id="password" name="password" type="password" placeholder="비밀번호">
+          <button class="btn-login member"><a href="#">로그인</a></button>
+        </form>
+        <!-- //form -->
+        <ul class="login-list">
+          <li><a href="#">아이디/비밀번호 찾기</a></li>
+          <li class="line"></li>
+          <li><a href="#">회원가입</a></li>
         </ul>
-        <h3>자주 찾는 서비스</h3>
-        <ul class="aside-service">
-          <li><a href="#">본원</a></li>
-          <li><a href="#">진료예약</a></li>
-          <li><a href="#">진료안내</a></li>
-          <li><a href="#">외래예약확인</a></li>
-        </ul>
-        <div class="phone">
-          <span>대표전화</span>
+        <button class="btn-naver"><a href="#">네이버 아이디로 로그인</a></button>
+        <div class="tel">
+          <div>대표전화 · 진료예약</div>
           <div class="num">1588-5700</div>
         </div>
-        <a href="#" class="btn-top"><img src="/img/ico-top.png" alt="TOP"></a>
-      </aside>
-      <!-- //aside -->
+      </div>
+      <!-- //login member -->
+      <!-- login non-member -->
+      <div class="area non-member">
+        <div class="title">
+          <h3>비회원 로그인</h3>
+        </div>
+        <!-- form -->
+        <form action="">
+          <div class="row id">
+            <input id="nmid" name="nmid" type="text" placeholder="이름">
+            <input id="nmnum" name="nmnum" type="text" placeholder="진찰권 번호">
+          </div>
+          <div class="row phone">
+            <input id="phone" name="phone" type="text" placeholder="휴대전화번호(010-0000-0000)">
+            <button class="btn-comfirm">승인</button>
+          </div>
+          <div class="row">
+            <input id="confirm" name="confirm" type="text" placeholder="승인번호">
+          </div>
+          <!-- privacy -->
+          <div class="privacy">
+            <div class="inner">
+              <h3>※ 개인정보 수집 및 이용에 대한 안내</h3>
+              <p>1. 수집/이용 목적: 비회원 환자의 진료예약 신청, 확인 및 취소에 대한 이용 기록 보관.<br>
+                2. 수집하는 항목: 이름, 환자등록번호(진찰권 번호), 휴대전화번호<br>
+                3. 개인정보의 보유 및 이용기간 : 2년<br>
+                4. 동의를 거부할 권리가 있으며, 대표전화(전화: 1588-5700)로 이용하실 수 있습니다.</p>
+            </div>
+          </div>
+          <!-- //privacy -->
+          <!-- user-check -->
+          <div class="agreement">
+            <input type="checkbox" id="agreement">
+            <label for="agreement"><span>환자 및 법적대리인만 서비스 이용이 가능하며 개인정보 이용에 동의합니다.</span></label>
+          </div>
+          <!-- //user-check -->
+          <button class="btn-login non-member"><a href="#">비회원 로그인</a></button>
+        </form>
+        <!-- //form -->
+        <a href="#" class="non-find">진찰권 번호(환자번호)를 잊으셨나요?</a>
+      </div>
+      <!-- //login non-member -->
     </div>
-    <!-- inner -->
   </main>
   <!-- //content -->
   <!-- footer -->
