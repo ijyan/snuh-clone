@@ -51,6 +51,7 @@
   <!-- content -->
   <main id="content" class="main">
     <!-- main-visual -->
+    <!-- TODO: 슬라이드 추가 -->
     <section class="main-visual">
       <img src="img/visual01.jpg" alt="심층진찰 서비스 안내">
     </section>
@@ -187,35 +188,33 @@
         <h3>건강정보</h3>
         <p>질병, 영양, 운동, 생활 속 관리 등 건강에 대한 모든 것</p>
         <ul class="list">
-          <li>
+          <li class="bg-01">
             <a href="#">
-                <h4>건강 TV</h4>
-                <p>서울대학교병원 의료진에게 듣는 팟캐스트 '건강톡톡'</p>
+              <h4>건강 TV</h4>
+              <p>서울대학교병원 의료진에게 듣는 팟캐스트 '건강톡톡'</p>
             </a>
           </li>
-          <li>
+          <li class="bg-02">
             <a href="#">
               <h4>우리 집 주치의</h4>
-              <p>하나의 질병에 대해서<br>깊이 있게 알아봅니다.</p>
+              <p>하나의 질병에 대해서 깊이 있게 알아봅니다.</p>
             </a>
           </li>
-          <li>
+          <li class="bg-03">
             <a href="#">
               <h4>공개강좌</h4>
-              <p>누구에게나 열려있는<br>공개 건강강좌</p>
+              <p>누구에게나 열려있는 공개 건강강좌</p>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <h4>건강채널</h4>
-              <p>더 편하게 만나는 건강정보</p>
-              <div class="link">
-                <a href="#">페이스북</a>
-                <a href="#">포스트</a>
-                <a href="#">네이버 TV</a>
-                <a href="#">블로그</a>
-              </div>
-            </a>
+          <li class="bg-04">
+            <h4>건강채널</h4>
+            <p>더 편하게 만나는 건강정보</p>
+            <div class="link">
+              <a href="#">페이스북</a>
+              <a href="#">포스트</a>
+              <a href="#">네이버 TV</a>
+              <a href="#">블로그</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -269,23 +268,24 @@
     <!-- //section-info -->
     <!-- section-way -->
     <section class="section-way">
-      <h3>오시는 길</h3>
-      <p>서울대학교병원으로 오시는 길을 알려드립니다.</p>
-      <ul class="list">
-        <li><a href="#">오시는 길</a></li>
-        <li><a href="#">원내위치도</a></li>
-        <li><a href="#">진료과/검사실</a></li>
-        <li><a href="#">주변편의시설</a></li>
-      </ul>
-      <!-- TODO: api 추가-->
-      <div class="map">
-        <div class="box">
-          <div class="address">
-            <h4>주소</h4>
-            <span>서울특별시 종로구 대학교 101(연건동 28) 서울대학교병원</span>
+      <div class="inner">
+        <h3>오시는 길</h3>
+        <p>서울대학교병원으로 오시는 길을 알려드립니다.</p>
+        <ul class="list">
+          <li class="item01"><a href="#">오시는 길</a></li>
+          <li class="item02"><a href="#">원내위치도</a></li>
+          <li class="item03"><a href="#">진료과/검사실</a></li>
+          <li class="item04"><a href="#">주변편의시설</a></li>
+        </ul>
+        <div id="map" style="width:1100px; height:340px;">
+          <div class="map-box">
+            <div class="address">
+              <h4>주소</h4>
+              <span>서울특별시 종로구 대학교 101(연건동 28)<br>서울대학교병원</span>
+            </div>
+            <a href="#" class="btn naver"><img src="img/img-naver.png" alt="네이버"> &nbsp 지도로 보기</a>
+            <a href="#" class="btn daum"><img src="img/img-daum.png" alt="다음"> &nbsp 지도로 보기</a>
           </div>
-          <a href="#">지도로 보기</a>
-          <a href="#">지도로 보기</a>
         </div>
       </div>
     </section>
@@ -342,10 +342,10 @@
         </ul>
         <p class="copyright">COPYRIGHT 2023 SEOUL NATIONAL UNIVERSITY HOSPITAL. ALL RIGHTS RESERVED</p>
         <ul class="cert">
-          <li><a href="#"><img src="img/cert01.png" alt="전자의무기록시스템(EMR)인증"></a></li>
-          <li><a href="#"><img src="img/cert02.png" alt="보건복지부 제 1호
+          <li><a href="#"><img src="img/footer-img01.png" alt="전자의무기록시스템(EMR)인증"></a></li>
+          <li><a href="#"><img src="img/footer-img02.png" alt="보건복지부 제 1호
 인증 의료기관"></a></li>
-          <li><a href="#"><img src="img/cert03.png" alt="정보보호관리체계(ISMS)인증"></a></li>
+          <li><a href="#"><img src="img/footer-img03.png" alt="정보보호관리체계(ISMS)인증"></a></li>
         </ul>
       </div>
     </div>
@@ -353,5 +353,16 @@
   </footer>
   <!-- //footer -->
 </div>
+<!--MAP-->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=810b8e555af750f2fe776bed02c55d39"></script>
+<script>
+  var container = document.getElementById('map');
+  var options = { //지도를 생성할 때 필요한 기본 옵션
+    center: new kakao.maps.LatLng(37.5795741, 126.9989948),
+    level : 3
+  };
+
+  var map = new kakao.maps.Map(container, options);
+</script>
 </body>
 </html>
