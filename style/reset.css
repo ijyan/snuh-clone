@@ -19,7 +19,6 @@ html, body {
     word-wrap: break-word;
     word-break: keep-all;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 div, span, applet, object, iframe,
