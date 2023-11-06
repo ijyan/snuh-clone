@@ -1,6 +1,7 @@
 /* **************************************** *
  * HEADER
  * **************************************** */
+#wrap {min-width: 1120px;}
 #header {border-bottom: 1px solid #ccc;}
 #header .inner {}
 /* top-menu */
@@ -68,7 +69,7 @@
 #footer {}
 /* top-footer */
 #footer .top-footer {background-color: #22263b;}
-#footer .top-footer .inner {height: 60px; width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 10px;}
+#footer .top-footer .inner {height: 60px; width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
 #footer .top-footer .inner .top-footer-list {display: flex; align-items: center;}
 #footer .top-footer .inner .top-footer-list li {}
 #footer .top-footer .inner .top-footer-list li a {display: block; color: #fff; position: relative; margin: 0 12px;}

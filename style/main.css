@@ -16,7 +16,7 @@
 
 /* main-visual */
 .main .main-visual {text-align: center; background-color: #f3f3f3;}
-.main .main-visual img {}
+.main .main-visual img {width: 100%;}
 
 /* card */
 .main .card {width: 100%; padding: 30px; height: 260px; position: relative;}
@@ -52,18 +52,34 @@
 
 /* notice */
 .notice {padding: 30px; grid-column: 3 / 5; background-color: #fff;}
-.notice .menu {}
-.notice .menu .btn-more {}
-.notice .list {margin: 32px 0 0;}
-.notice .list li {padding-left: 10px; display: flex; position: relative; gap: 60px; margin: 15px 0 0;}
+.main .section-home .notice .tab {margin: 0 0 32px;}
+.notice .menu {position: relative;}
+.notice .menu .btn-more {display: block; width: 22px; height: 22px; border: 1px solid #ccc; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.notice .menu .btn-more:before {width: 10px; height: 10px; content: ''; display: block; background-image: url('../img/ico-plus.svg'); position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.notice .list {display: flex; flex-direction: column; height: calc(100% - 61px); justify-content: space-between;}
+.notice .list li {padding-left: 10px; display: flex; position: relative; gap: 60px;}
 .notice .list li:before {content: ''; width: 3px; height: 3px; background-color: #888; position: absolute; left: 0; top: 11px;}
-.notice .list li.new {}
 .notice .list li a {text-overflow: ellipsis; word-break: break-all; white-space: nowrap; overflow: hidden; display: block;}
 .notice .list li .date {color: #999; white-space: nowrap;}
 
 /* issue */
 .issue {padding: 30px; grid-column: 1 / 3; background-color: #fff;}
-
+.issue .title {display: flex; justify-content: space-between; margin: 0 0 30px;}
+.issue .title h3 {font-size: 20px;}
+.issue .title .issue-util {display: flex; align-items: center;}
+.issue .title .issue-util .num {margin: 0 24px 0 0; color: #999;}
+.issue .title .issue-util .num em {color: #2763ba;}
+.issue .title .issue-util .btn-wrap {display: block; font-size: 0;}
+.issue .title .issue-util .btn-wrap button {width: 30px; height: 30px; border: 1px solid #ccc; background-image: url('../img/issue-btn.png'); margin-left: -1px;}
+.issue .title .issue-util .btn-wrap .prev {}
+.issue .title .issue-util .btn-wrap .play {background-position: -28px 50%;}
+.issue .title .issue-util .btn-wrap .next {background-position: 100% 50%;}
+.issue .cont {}
+.issue .cont .item {}
+.issue .cont .item a {display: flex; gap: 30px;}
+.issue .cont .item a img {width: 140px;}
+.issue .cont .item a h4 {padding: 12px 0; font-size: 20px;}
+.issue .cont .item a p {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
 /* section-health */
 .main .section-health {}
 .main .section-health .inner {width: 1100px; margin: 0 auto; padding: 50px 0;}
