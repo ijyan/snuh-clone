@@ -8,7 +8,7 @@
 │   ├── login.html
 │   └── procedure.html
 ├── style
-│   ├── common.css
+│   ├── layout.css
 │   ├── login.css
 │   ├── main.css
 │   ├── procedure.css
